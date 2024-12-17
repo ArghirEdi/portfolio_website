@@ -1,7 +1,32 @@
+import { useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PropTypes from "prop-types";
+import { Link } from "react-scroll";
+import { NavbarMenu } from "../mockData/data";
 
-function ResponsiveMenu({ open }) {
+function ResponsiveMenu({ open, setOpen }) {
+  const menuRef = useRef();
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setOpen(false);
+      }
+    };
+
+    const handleScroll = () => {
+      setOpen(false);
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [setOpen]);
+
   return (
     <AnimatePresence mode="wait">
       {open && (
@@ -12,12 +37,25 @@ function ResponsiveMenu({ open }) {
           transition={{ duration: 0.3 }}
           className="absolute top-20 left-0 w-full h-screen z-20"
         >
-          <div className="text-xl font-semibold uppercase bg-primary text-white py-10 m-6 rounded-3xl">
+          <div
+            ref={menuRef}
+            className="text-xl font-semibold uppercase bg-gradient-to-r from-bg-nav-1 via-bg-nav-2 to-bg-nav-3 text-white py-10 m-6 rounded-3xl"
+          >
             <ul className="flex flex-col justify-center items-center gap-10">
-              <li>Home</li>
-              <li>About</li>
-              <li>Service</li>
-              <li>Contact</li>
+              {NavbarMenu.map((item) => (
+                <li className="relative group" key={item.id}>
+                  <Link
+                    to={item.link}
+                    smooth={true}
+                    duration={500}
+                    className="cursor-pointer"
+                    onClick={() => setOpen(false)} // Close the menu on click
+                  >
+                    {item.title}
+                  </Link>
+                  <span className="absolute left-0 bottom-[-5px] w-0 h-1 rounded-xl bg-gradient-to-r from-orange-400 to-orange-600 transition-all duration-300 group-hover:w-full"></span>
+                </li>
+              ))}
             </ul>
           </div>
         </motion.div>
@@ -28,6 +66,7 @@ function ResponsiveMenu({ open }) {
 
 ResponsiveMenu.propTypes = {
   open: PropTypes.bool.isRequired,
+  setOpen: PropTypes.bool.isRequired,
 };
 
 export default ResponsiveMenu;

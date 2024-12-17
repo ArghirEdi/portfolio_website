@@ -2,26 +2,26 @@ export const NavbarMenu = [
   {
     id: 1,
     title: "HOME",
-    link: "/",
+    link: "home",
   },
   {
     id: 2,
     title: "ABOUT",
-    link: "#",
+    link: "about",
   },
   {
     id: 3,
     title: "SKILLS",
-    link: "#",
+    link: "skills",
   },
   {
     id: 4,
     title: "EDUCATION",
-    link: "#",
+    link: "education",
   },
   {
     id: 5,
     title: "CONTACT ME",
-    link: "#",
+    link: "contact",
   },
 ];
