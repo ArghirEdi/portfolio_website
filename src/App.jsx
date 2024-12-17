@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import NavBar from "./components/NavBar";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+    <div className="overflow-x-hidden">
+      <NavBar />
+      <div className="min-h-screen w-full relative bg-gradient-to-r from-fuchsia-500 via-red-600 to-orange-400 flex items-center justify-center text-center flex-col gap-10 text-white p-52">
+        <h1 className="text-7xl">Section 1</h1>
+        <p className="text-3xl">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+          explicabo id ad et! Tempore beatae optio minima maxime earum eligendi
+          corporis nam veritatis, esse exercitationem autem debitis molestias
+          labore consequuntur.
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <div className="min-h-screen w-full relative bg-gradient-to-r from-orange-500 to-yellow-300 flex items-center justify-center text-center flex-col gap-10 text-white p-52">
+        <h1 className="text-7xl">Section 2</h1>
+        <p className="text-3xl">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+          explicabo id ad et! Tempore beatae optio minima maxime earum eligendi
+          corporis nam veritatis, esse exercitationem autem debitis molestias
+          labore consequuntur.
+        </p>
+      </div>
+      <div className="min-h-screen w-full relative bg-gradient-to-r from-sky-500 to-blue-300 flex items-center justify-center text-center flex-col gap-10 text-white p-52">
+        <h1 className="text-7xl">Section 3</h1>
+        <p className="text-3xl">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+          explicabo id ad et! Tempore beatae optio minima maxime earum eligendi
+          corporis nam veritatis, esse exercitationem autem debitis molestias
+          labore consequuntur.
+        </p>
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
