@@ -4,7 +4,7 @@ function Home() {
   return (
     <div
       id="home"
-      className="w-full flex flex-col items-center justify-around text-center pb-16 pt-10 md:pt-32"
+      className="w-full flex flex-col items-center justify-around text-center pb-16 pt-10 md:pt-32 bg-gradient-to-r from-green-200 via-blue-200 to-purple-200"
     >
       <img
         src="src\assets\img\personal_photo.jpg"

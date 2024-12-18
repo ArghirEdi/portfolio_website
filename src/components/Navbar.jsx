@@ -24,7 +24,7 @@ function NavBar() {
 
   return (
     <>
-      <nav className="md:bg-gradient-to-r md:from-bg-nav-1 md:via-bg-nav-2 md:to-bg-nav-3 md:w-full md:rounded-full md:shadow-2xl">
+      <nav className="bg-gradient-to-r md:from-slate-500 md:via-gray-600 md:to-neutral-600 md:w-full md:rounded-3xl md:shadow-2xl from-green-200 via-blue-200 to-purple-200">
         <div className="container flex justify-between items-center py-8">
           <div className="hidden md:flex justify-center w-full">
             <ul className="flex items-center gap-6 text-white">

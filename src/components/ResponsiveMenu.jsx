@@ -39,7 +39,7 @@ function ResponsiveMenu({ open, setOpen }) {
         >
           <div
             ref={menuRef}
-            className="text-xl font-semibold uppercase bg-gradient-to-r from-bg-nav-1 via-bg-nav-2 to-bg-nav-3 text-white py-10 m-6 rounded-3xl"
+            className="text-xl font-semibold uppercase bg-gradient-to-r from-slate-500 via-gray-600 to-neutral-600 text-white py-10 m-6 rounded-3xl"
           >
             <ul className="flex flex-col justify-center items-center gap-10">
               {NavbarMenu.map((item) => (

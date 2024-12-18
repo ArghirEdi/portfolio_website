@@ -1,6 +1,6 @@
 import About from "./components/about/About";
 import NavBar from "./components/NavBar";
-import Skills from "./components/Skills";
+import Skills from "./components/skills/Skills";
 import Home from "./components/Home";
 import Education from "./components/Education";
 import ContactMe from "./components/ContactMe";

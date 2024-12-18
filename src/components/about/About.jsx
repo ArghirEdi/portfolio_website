@@ -6,7 +6,7 @@ function About() {
   return (
     <div
       id="about"
-      className="w-full flex flex-col items-center justify-normal text-center pt-10 pb-16"
+      className="w-full flex flex-col items-center justify-normal text-center pt-10 pb-16 bg-gradient-to-r from-green-200 via-blue-200 to-purple-200"
     >
       <h1 className="text-4xl font-bold mb-16">About Me</h1>
       <div className="flex flex-col md:flex-row w-full max-w-4xl">
