@@ -15,7 +15,7 @@ function Skills() {
       className="w-full flex flex-col items-center justify-center text-center pt-10 pb-16 bg-gradient-to-r from-green-200 via-blue-200 to-purple-200"
     >
       <h1 className="text-4xl font-bold mb-16">Skills</h1>
-      <div className="w-full max-w-4xl">
+      <div className="w-full max-w-4xl px-4 md:px-8">
         {skills.map((skill) => (
           <SkillBar
             key={skill.skill}

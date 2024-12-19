@@ -2,8 +2,9 @@ import About from "./components/about/About";
 import NavBar from "./components/NavBar";
 import Skills from "./components/skills/Skills";
 import Home from "./components/Home";
-import Education from "./components/Education";
 import ContactMe from "./components/ContactMe";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -12,8 +13,10 @@ function App() {
       <Home />
       <About />
       <Skills />
-      <Education />
       <ContactMe />
+      <hr className="w-full border-t-2 border-gray-500" />
+      <Footer />
+      <ScrollToTop />
     </div>
   );
 }
