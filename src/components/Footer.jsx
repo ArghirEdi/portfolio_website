@@ -16,7 +16,7 @@ function Footer() {
           rel="noopener noreferrer"
           className="text-gray-700 hover:text-blue-800"
         >
-          <FaFacebook size={32} />
+          <FaFacebook size={35} />
         </a>
         <a
           href="https://www.instagram.com/arghiredi/"
@@ -24,11 +24,11 @@ function Footer() {
           rel="noopener noreferrer"
           className="text-gray-700 hover:text-pink-600"
         >
-          <FaInstagram size={32} />
+          <FaInstagram size={35} />
         </a>
       </div>
       <p className="text-sm">
-        All rights reserved by Arghir Eduard Gabriel - {currentYear}
+        © {currentYear} All rights reserved by Arghir Eduard Gabriel
       </p>
     </div>
   );

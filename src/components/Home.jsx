@@ -21,7 +21,7 @@ function Home() {
           rel="noopener noreferrer"
           className="text-gray-700 hover:text-blue-800"
         >
-          <FaLinkedin size={32} />
+          <FaLinkedin size={35} />
         </a>
         <a
           href="https://github.com/ArghirEdi"
@@ -29,14 +29,14 @@ function Home() {
           rel="noopener noreferrer"
           className="text-gray-700 hover:text-black"
         >
-          <FaGithub size={32} />
+          <FaGithub size={35} />
         </a>
       </div>
       <a
         href="src\assets\documents\CV_Eduard_Arghir.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600"
+        className="bg-orange-500 text-white py-3 px-5 rounded hover:bg-orange-600"
       >
         Download Resume
       </a>
