@@ -1,3 +1,5 @@
+import MyImage2 from "/src/assets/img/me.png";
+
 function Description() {
   return (
     <div className="p-4">
@@ -7,7 +9,7 @@ function Description() {
         continuously improving my skills.
       </p>
       <img
-        src="src/assets/img/me.png"
+        src={MyImage2}
         alt="photo of me"
         className="w-48 h-56 rounded-lg mx-auto"
       />

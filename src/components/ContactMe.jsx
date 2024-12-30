@@ -47,13 +47,13 @@ function ContactMe() {
   return (
     <div
       id="contact"
-      className="w-full flex flex-col items-center justify-center text-center pt-10 pb-16 bg-gradient-to-r from-green-200 via-blue-200 to-purple-200"
+      className="w-full flex flex-col items-center justify-center text-center pt-10 pb-16 bg-gradient-to-r from-green-200 via-blue-200 to-purple-200 px-4"
     >
       <h1 className="text-4xl font-bold mb-8">Get in Touch</h1>
       <form onSubmit={handleSubmit} className="w-full max-w-lg">
         <div className="mb-4">
           <label
-            className="block text-left text-gray-700 text-sm font-bold mb-2"
+            className="block text-left text-gray-700 text-lg font-semibold mb-2"
             htmlFor="name"
           >
             Name
@@ -70,7 +70,7 @@ function ContactMe() {
         </div>
         <div className="mb-4">
           <label
-            className="block text-left text-gray-700 text-sm font-bold mb-2"
+            className="block text-left text-gray-700 text-lg font-semibold mb-2"
             htmlFor="email"
           >
             Email
@@ -87,7 +87,7 @@ function ContactMe() {
         </div>
         <div className="mb-4">
           <label
-            className="block text-left text-gray-700 text-sm font-bold mb-2"
+            className="block text-left text-gray-700 text-lg font-semibold mb-2"
             htmlFor="message"
           >
             Message
