@@ -27,12 +27,10 @@ function ContactMe() {
         "IPBUQq849PR7gnJ6v"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
           alert("Message sent successfully!");
         },
-        (error) => {
-          console.log(error.text);
+        () => {
           alert("Failed to send message. Please try again.");
         }
       );

@@ -19,10 +19,12 @@ function ResponsiveMenu({ open, setOpen }) {
     };
 
     document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("touchstart", handleClickOutside);
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
       window.removeEventListener("scroll", handleScroll);
     };
   }, [setOpen]);
@@ -53,7 +55,6 @@ function ResponsiveMenu({ open, setOpen }) {
                   >
                     {item.title}
                   </Link>
-                  <span className="absolute left-0 bottom-[-5px] w-0 h-1 rounded-xl bg-gradient-to-r from-orange-400 to-orange-600 transition-all duration-300 group-hover:w-full"></span>
                 </li>
               ))}
             </ul>

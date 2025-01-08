@@ -36,7 +36,6 @@ function NavBar() {
                       smooth={true}
                       duration={500}
                       className="block w-full h-full py-1 px-3 font-semibold cursor-pointer"
-                      // className="relative group inline-block py-1 px-3 hover:text-primary font-semibold"
                     >
                       {item.title}
                     </Link>
