@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Add this to your main CSS file */
 progress {
   appearance: none;
   -webkit-appearance: none;
