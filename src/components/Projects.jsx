@@ -22,7 +22,7 @@ function Projects() {
   return (
     <div
       id="projects"
-      className="w-full flex flex-col items-center justify-center text-center md:px-10 lg:px-36 pt-10 pb-16 bg-gradient-to-r from-green-200 via-blue-200 to-purple-200 px-4"
+      className="w-full flex flex-col items-center justify-center text-center md:px-10 pt-10 pb-16 bg-gradient-to-r from-green-200 via-blue-200 to-purple-200 px-4"
     >
       <h1 className="text-4xl font-bold mb-14">Projects</h1>
       <div className="grid grid-cols-1 max-w-4xl md:grid-cols-2 gap-8">
